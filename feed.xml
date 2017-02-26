@@ -1,20 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[circleci-ghpages-phenomic]]></title><description><![CDATA[circleci-ghpages-phenomic]]></description><link>https://methyl.github.io/circleci-ghpages-phenomic</link><generator>RSS for Node</generator><lastBuildDate>Sun, 26 Feb 2017 22:40:24 GMT</lastBuildDate><atom:link href="https://methyl.github.io/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[XD]]></title><description><![CDATA[<p>KuRWA</p>
-]]></description><link>https://methyl.github.io/posts/hello-world/</link><guid isPermaLink="true">https://methyl.github.io/posts/hello-world/</guid><pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[First Post, no hero.]]></title><description><![CDATA[<p>This is the first post!</p>
-<p>Code is highlighted by default.</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> StatelessComponent = <span class="hljs-function">(<span class="hljs-params">props</span>) =></span> {
-  <span class="hljs-keyword">return</span> (
-    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
-      I‘m a stateless component that accepts children
-      { props.children }
-    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
-  )
-}
-
-<span class="hljs-comment">// ...</span>
-
-  <span class="hljs-keyword">return</span> (
-    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">StatelessComponent</span>></span>
-      Example of child
-    <span class="hljs-tag">&#x3C;/<span class="hljs-name">StatelessComponent</span>></span></span>
-  )</code></pre>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[circleci-ghpages-phenomic]]></title><description><![CDATA[circleci-ghpages-phenomic]]></description><link>https://methyl.github.io/circleci-ghpages-phenomic</link><generator>RSS for Node</generator><lastBuildDate>Sun, 26 Feb 2017 23:04:22 GMT</lastBuildDate><atom:link href="https://methyl.github.io/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[XD]]></title><description><![CDATA[<p>KuRWA</p>
+<p>a to ci chuj</p>
+]]></description><link>https://methyl.github.io/posts/hello-world/</link><guid isPermaLink="true">https://methyl.github.io/posts/hello-world/</guid><pubDate>Sun, 14 Feb 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Nowa nazwa]]></title><description><![CDATA[<p>Nowego posta</p>
+<pre><code>to je markdown
+</code></pre>
+<h1 id="tego-nie-zrozumisz"><a href="#tego-nie-zrozumisz" class="phenomic-HeadingAnchor">#</a>tego nie zrozumisz</h1>
 ]]></description><link>https://methyl.github.io/posts/first-post/</link><guid isPermaLink="true">https://methyl.github.io/posts/first-post/</guid><pubDate>Fri, 22 Jan 2016 00:00:00 GMT</pubDate></item></channel></rss>
