@@ -1,6 +1,6 @@
 ---
-title: First Post, no hero.
-date: 2016-01-22
+title: 'First Post, no hero.'
+date: 2016-01-22T00:00:00.000Z
 layout: Post
 ---
 
@@ -26,3 +26,4 @@ const StatelessComponent = (props) => {
     </StatelessComponent>
   )
 ```
+
