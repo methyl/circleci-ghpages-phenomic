@@ -8,3 +8,4 @@ hero: 'https://farm8.staticflickr.com/7479/15669216853_aa8e70eae1_o.jpg'
 const czy = 'ja śnię?'
 ```
 
+
