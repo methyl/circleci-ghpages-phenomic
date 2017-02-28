@@ -13,7 +13,6 @@ const AppContainer = (props) => (
   <Container>
     <DefaultHeadMeta />
     <Header />
-    <h1>Testing deploy</h1>
     <Content>
       { props.children }
     </Content>

@@ -1,55 +1,59 @@
 :root {
-  --nav-item-padding: 0.5rem;
+  --nav-item-padding: 1.2rem;
 }
 
 .header {
   position: absolute;
-  /* stretch */
   left: 0;
   right: 0;
-
-  color: var(--colorNeutralLight);
+  /*block width until RWD is done*/
+  min-width: var(--maxWidth);
+  background: var(--colorLight);
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: calc(var(--maxWidth) + (var(--nav-item-padding) * 2));
+  align-items: center;
+  max-width: var(--maxWidth);
   margin: 0 auto;
   padding: 0;
-  line-height: 3rem;
 }
 
-.navPart1,
-.navPart2 {
+.logo,
+.menu {
   display: flex;
   flex-direction: row;
+}
+
+.logo svg {
+  margin-right: 0.5rem;
+  width: 8.75rem;
+}
+
+.menu {
+  margin-left: 1rem
 }
 
 .link {
   display: flex;
   align-items: center;
   padding: 0 var(--nav-item-padding);
-  color: inherit;
+  color: var(--colorHeading);
+  text-transform: uppercase;
   text-decoration: none !important;
-  opacity: 0.6;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 5.875rem;
   transition: 0.4s all;
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.1875rem solid transparent;
 
-  &:hover,
-  &:focus {
-    color: inherit;
-    opacity: 1;
-    border-bottom-color: var(--colorNeutralLight);
+  &:hover {
+    border-bottom-color: color(var(--colorHeading) a(0.5));
   }
-}
 
-.link svg {
-  fill: currentColor;
-  opacity: 0.5;
-  margin-right: 0.5rem;
-  width: 14px;
-  height: 14px;
-  vertical-align: middle;
+  &.isActive {
+    border-bottom-color: var(--colorHeading);
+  }
 }

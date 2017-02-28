@@ -3,26 +3,31 @@ import cx from "classnames"
 
 import styles from "./index.css"
 
-const Button = ({ className, secondary, light, big, ...otherProps }) => (
+const Button = ({ className, color, outline, ...otherProps }) => (
   <span
     role="button"
     { ...otherProps }
     className={ cx({
       [className]: className,
       [styles.button]: true,
-      [styles.secondary]: secondary,
-      [styles.light]: light,
-      [styles.big]: big,
-    }) }
+      [styles.outline]: outline,
+      [styles[color]]: color,
+    })
+   }
   />
 )
 
 Button.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  secondary: PropTypes.bool,
-  light: PropTypes.bool,
-  big: PropTypes.bool,
+  outline: PropTypes.bool,
+  color: PropTypes.oneOf(["blue", "red", "green"]),
+}
+
+Button.defaultProps = {
+  className: "",
+  outline: false,
+  color: "blue",
 }
 
 Button.displayName = "Button"

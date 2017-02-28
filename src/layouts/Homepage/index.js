@@ -1,12 +1,17 @@
 import React from "react"
 
-import LatestPosts from "../../components/LatestPosts"
 import Page from "../Page"
+import { Content as Contact } from "../Contact"
+import Section from "../../components/Section"
+import Hero from "../../components/Hero"
 
 const Homepage = (props) => {
   return (
     <Page { ...props }>
-      <LatestPosts />
+      <Hero />
+      <Section heading="Kontakt">
+        <Contact />
+      </Section>
     </Page>
   )
 }

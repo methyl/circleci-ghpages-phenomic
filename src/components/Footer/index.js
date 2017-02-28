@@ -4,18 +4,14 @@ import styles from "./index.css"
 
 const Footer = () => (
   <footer className={ styles.footer }>
-    { /* If you like Phenomic, this is a way to share the love ;) */ }
-    <p>
-      <a
-        href={ process.env.PHENOMIC_HOMEPAGE }
-        className={ styles.phenomicReference }
-      >
-        { "Website generated with " }
-        <span className={ styles.phenomicReferenceName }>
-          {  `<${ process.env.PHENOMIC_NAME} />` }
-        </span>
-      </a>
-    </p>
+    <div className={ styles.content }>
+      <div className={ styles.left} >
+        Weles Acoustics Sp. z o.o
+      </div>
+      <div className={ styles.right }>
+        © 2017
+      </div>
+    </div>
   </footer>
 )
 

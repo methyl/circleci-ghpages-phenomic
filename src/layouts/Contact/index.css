@@ -1,0 +1,24 @@
+.content {
+  padding-top: 2rem;
+}
+
+.address {
+  float: left;
+  width: calc(var(--maxWidth) * 0.4);
+  padding: 1rem 2rem 0 0;
+}
+
+.map {
+  display: block;
+  height: 15.3rem;
+  margin-top: 1rem;
+  background-repeat: no-repeat;
+  background-position: 33% 52%;
+}
+
+.form {
+  float: left;
+  width: calc(var(--maxWidth) * 0.6);
+  padding: 0.5rem 0 0 2rem;
+  border-left: 1px solid color(var(--colorLink) a(0.2));
+}

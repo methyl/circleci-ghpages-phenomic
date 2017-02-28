@@ -1,5 +1,7 @@
 /* Using global sytles is not recommended, prefer local styles via CSS Modules */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800|Roboto:300');
+
 /*
  * box model like it should be
  *
@@ -18,6 +20,7 @@ html { box-sizing: border-box; }
  */
 html,
 body {
+  min-width: var(--maxWidth);
   margin: 0;
   padding: 0;
 }
@@ -27,17 +30,104 @@ body {
  */
 html {
   min-height: 100%;
-  background: color(var(--colorPrimary) l(99%));
+  background: #fff;
 }
 
 body {
   color: var(--colorText);
   font-size: 1rem;
+  font-weight: 100;
   line-height: 1.5rem;
-
-  /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+:--headings {
+  position: relative;
+  margin-top: 0;
+  color: var(--colorHeading);
+  font-weight: 100;
+}
+
+h1 {
+  margin-bottom: 1.8rem;
+  font-size: 2.25rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* minimal styling, prefer removing this and use local styles */
+a {
+  color: var(--colorLink);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input, select, textarea, button{
+  font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: var(--colorLink);
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+  background: var(--colorLight);
+  outline: none;
+  transition: all 0.2s;
+
+  &::placeholder {
+    color: var(--colorText);
+  }
+
+  &:focus {
+    background: color(var(--colorLight) a(40%));
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--colorNeutral);
+  opacity: 0.2;
+  margin: 2rem 0;
+}
+
+address { font-style: normal }
 
 /*
  * .phenomic-HeadingAnchor
@@ -45,11 +135,6 @@ body {
  * anchors for markdown headings, generated via markdown renderer, so require
  * global styling
  */
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-
-:--headings {
-  position: relative;
-}
 
 :root {
   --phenomic-HeadingAnchor-width: 1.4rem;
@@ -66,26 +151,4 @@ body {
   text-decoration: none;
   opacity: 0.1;
   transition: opacity 0.2s;
-
-  @nest :--headings:hover & {
-    opacity: 1;
-  }
-}
-
-/* minimal styling, prefer removing this and use local styles */
-a {
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: var(--colorNeutral);
-  opacity: 0.2;
-  margin: 2rem 0;
 }

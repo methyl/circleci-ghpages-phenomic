@@ -1,32 +1,18 @@
 ---
-title: About Phenomic base theme
-hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
-# hero credit: https://www.flickr.com/photos/pslee999/15589950511/
-cta:
-  label: Discover Phenomic now
-  link: "https://phenomic.io/"
-  props:
-    big: true
+title: O firmie
+layout: Page
 ---
 
-You are currently viewing Phenomic base theme.
+Weles Acoustics jest firmą wyspecjalizowaną w dostarczaniu sprzętu do pomiarów wibro-akustycznych. Oferujemy szeroką gamę produktów opracowanych w toku ostatnich 10 lat pracy badawczej naszego partnera, firmy BSWA Technologies.
 
-For now [Phenomic does not provide a native way to extend themes](https://github.com/MoOx/phenomic/issues/508) but since it's based on
-React and uses a component approach, it's pretty easy to make your own reusable collection of layouts and components.
+Naszym celem jest odnalezienie, wspólnie z tobą, najlepszego rozwiązania dla twoich pomiarów. Nasi konsultanci zawsze chętnie doradzą przy wyborze konkretnego produktu oraz zorganizują jego demonstrację.
+
+Zakres naszych usług obejmuje sprzedaż oraz doradztwo przy doborze zestawów mikrofonowych (przedwzmacniacz oraz kapsuła mikrofonowa), akcelerometrów, miernikówpoziomu dźwięku, źródeł dźwięku, jak również kompletnych systemów pomiarowych dla zastosowań w akustyce środowiskowej oraz budowlanej. Ponadto, w naszej ofercie znajdują się również symulatory głowy, uszu oraz ust. Gamę produktów zamyka szeroki asortyment 123
+tub impedancyjnych, przeznaczonych do pomiaru współczynnika pochłaniania dźwięku – Pełna oferta Weles Acoustics dostępna tutaj.
+
+Dla wszystkich oferowanych produktów zapewniamy pełne wsparcie techniczne oraz serwis. Jesteśmy również dostępni w charakterze konsultantów!
 
 ---
 
-This website is made with [Phenomic](https://phenomic.io/).
-
-If you are curious about it, you can take a look at
-[existing websites that use Phenomic](https://phenomic.io/showcase/),
-some projects share their source code!
-
-<!-- demo to show you that you can use "assets" folder -->
-<small>
-  Built with
-  <a href="https://facebook.github.io/react/">
-    <img alt="" src="../assets/react.svg" width="16" height="16" />
-    React
-  </a>.
-</small>
+Życzymy udanych pomiarów,<br />
+Zespół Weles Acoustics
