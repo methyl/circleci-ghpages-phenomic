@@ -3,7 +3,7 @@ backend:
   repo: methyl/circleci-ghpages-phenomic
   branch: master
 
-public_folder: "/assets"
+public_folder: "content"
 media_folder: "content/assets"
 
 collections:
