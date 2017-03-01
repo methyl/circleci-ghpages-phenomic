@@ -7,6 +7,7 @@ import PhenomicLoaderFeedWebpackPlugin
   from "phenomic/lib/loader-feed-webpack-plugin"
 import PhenomicLoaderSitemapWebpackPlugin
   from "phenomic/lib/loader-sitemap-webpack-plugin"
+import CopyWebpackPlugin from "copy-webpack-plugin"
 
 import pkg from "./package.json"
 
@@ -279,7 +280,11 @@ export default (config = {}) => {
           { compress: { warnings: false } }
         ),
       ],
+      new CopyWebpackPlugin([
+        { from: 'admin', to: 'admin' },
+      ]),
     ],
+
 
     output: {
       path: path.join(__dirname, config.destination),
