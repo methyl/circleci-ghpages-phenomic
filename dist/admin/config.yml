@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: methyl/circleci-ghpages-phenomic
+  branch: master
+
+public_folder: "/assets"
+media_folder: "content/assets"
+
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "content/posts"
+    create: true
+    sort: "date:desc" # Default is title:asc
+    slug: "{{slug}}"
+    card: {type: "alltype", text: "title"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover", name: "cover", widget: "image", optional: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "string", default: "Post"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
