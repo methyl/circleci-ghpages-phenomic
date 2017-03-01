@@ -42,18 +42,34 @@
   padding: 0 var(--nav-item-padding);
   color: var(--colorHeading);
   text-transform: uppercase;
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 5.875rem;
-  transition: 0.4s all;
-  border-bottom: 0.1875rem solid transparent;
+  position: relative;
 
-  &:hover {
-    border-bottom-color: color(var(--colorHeading) a(0.5));
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.1875rem;
+    transition: 0.4s opacity;
+    opacity: 0;
+    background-color: var(--colorHeading);
   }
 
-  &.isActive {
-    border-bottom-color: var(--colorHeading);
+  &:hover {
+    text-decoration: none
+  }
+
+  &:hover:after {
+    opacity: 0.5
+  }
+
+  &.isActive:after {
+    opacity: 1
   }
 }
