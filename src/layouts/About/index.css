@@ -1,3 +1,9 @@
-.content {
-  padding-top: 2rem;
+.body {
+  padding-left: 32rem;
+  background-repeat: no-repeat;
+  background-position: -10% 30%;
+
+  & strong {
+    color: var(--colorHeading);
+  }
 }

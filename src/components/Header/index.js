@@ -26,7 +26,6 @@ const Header = () => (
         <MenuLink to="about">O firmie</MenuLink>
         <MenuLink to="products">Oferta</MenuLink>
         <MenuLink to="news">Aktualności</MenuLink>
-        <MenuLink to="contact">Kontakt</MenuLink>
       </div>
     </nav>
   </header>

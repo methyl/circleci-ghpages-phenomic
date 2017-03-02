@@ -2,10 +2,20 @@
   padding-top: 2rem;
 }
 
-.address {
-  float: left;
+.left, .right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.left {
   width: calc(var(--maxWidth) * 0.4);
   padding: 1rem 2rem 0 0;
+}
+
+.right {
+  width: calc(var(--maxWidth) * 0.6);
+  padding: 0.5rem 0 0 2rem;
+  border-left: 1px solid color(var(--colorLink) a(0.2));
 }
 
 .map {
@@ -14,11 +24,4 @@
   margin-top: 1rem;
   background-repeat: no-repeat;
   background-position: 33% 52%;
-}
-
-.form {
-  float: left;
-  width: calc(var(--maxWidth) * 0.6);
-  padding: 0.5rem 0 0 2rem;
-  border-left: 1px solid color(var(--colorLink) a(0.2));
 }

@@ -1,31 +1,34 @@
-import React from "react"
-import { Link } from "phenomic"
+import React, { PropTypes } from "react"
+import { BodyContainer, Link } from "phenomic"
 
+import Section from "../Section"
 import Button from "../Button"
 
 import heroImage from "./assets/hero-image.jpg"
 import styles from "./index.css"
 
-const Hero = () => (
-  <hero
-    style={{ backgroundImage: `url("${heroImage}")`}}
+const Hero = ({ body }) => (
+  <Section
     className={ styles.container }
+    style={{ backgroundImage: `url("${heroImage}")`}}
   >
     <div className={ styles.content }>
-      <h1 className={ styles.heading }>
-        Kontrolujemy<br />dźwięk
-      </h1>
-      <p className={ styles.body }>
-        Jesteśmy dystrybutorem wysokiej jakości sprzętu do precyzyjnych
-        pomiarów akustycznych. Bazując na wieloletnim doświadczeniu naszych
-        partnerów oraz własnym, oferujemy sprzęt spełniający światowe
-        standardy technologiczne oraz jakościowe!
-      </p>
+      <div className={ styles.body }>
+        <BodyContainer>{ body }</BodyContainer>
+      </div>
       <Link to="about" className={ styles.button }>
         <Button color="red">Więcej o firmie</Button>
       </Link>
     </div>
-  </hero>
+  </Section>
 )
+
+Hero.propTypes = {
+  body: PropTypes.string,
+}
+
+Hero.defaultProps = {
+  body: "",
+}
 
 export default Hero

@@ -37,6 +37,7 @@
 }
 
 .link {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 0 var(--nav-item-padding);
@@ -45,8 +46,7 @@
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 5.875rem;
-  position: relative;
+  line-height: 6rem;
 
   &:after {
     content: '';

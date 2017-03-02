@@ -1,4 +1,4 @@
 ---
 title: Kontakt
-layout: Contact
+layout: Page
 ---

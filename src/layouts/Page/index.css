@@ -1,12 +1,11 @@
 .page {
+  display: flex;
+  flex: 1;
 }
 
 .wrapper {
+  display: flex;
   min-width: var(--maxWidth);
   max-width: var(--maxWidth);
-  margin: 6rem auto;
+  margin: 6rem auto 0;
 }
-
-/*.pageContent {
-  margin: 6rem;
-}*/

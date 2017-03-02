@@ -1,9 +1,6 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
-import warning from "warning"
-import { BodyContainer, joinUri } from "phenomic"
-
-import Loading from "../../components/Loading"
+import { joinUri } from "phenomic"
 
 import styles from "./index.css"
 
@@ -13,7 +10,6 @@ const Page = (
     __filename,
     __url,
     head,
-    body,
     header,
     footer,
     children,
@@ -22,16 +18,8 @@ const Page = (
     metadata: { pkg },
   }
 ) => {
-  warning(
-    typeof head.title === "string",
-    `Your page '${ __filename }' needs a title`
-  )
-
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
-
-  const socialImage = head.hero && head.hero.match("://") ? head.hero
-    : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
-
+  const socialImage = "";
   const meta = [
     { property: "og:type", content: "article" },
     { property: "og:title", content: metaTitle },
@@ -51,21 +39,9 @@ const Page = (
 
   return (
     <div className={ styles.page }>
-      <Helmet
-        title={ metaTitle }
-        meta={ meta }
-      />
-      <div className={ styles.wrapper + " " + styles.pageContent }>
-        { header }
-        <div className={ styles.body }>
-          {
-            isLoading
-            ? <Loading />
-            : <BodyContainer>{ body }</BodyContainer>
-          }
-        </div>
+      <Helmet title={ metaTitle } meta={ meta } />
+      <div className={ styles.wrapper }>
         { children }
-        { footer }
       </div>
     </div>
   )
@@ -77,7 +53,6 @@ Page.propTypes = {
   __filename: PropTypes.string,
   __url: PropTypes.string,
   head: PropTypes.object.isRequired,
-  body: PropTypes.string,
   header: PropTypes.element,
   footer: PropTypes.element,
 }

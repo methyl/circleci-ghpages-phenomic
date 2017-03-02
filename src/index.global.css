@@ -33,11 +33,22 @@ html {
   background: #fff;
 }
 
+:root {
+  --baseFontSize: 1rem;
+  --baseLineHeight: calc(var(--baseFontSize) * 1.5);
+  --headingMarginMultiplier: calc(2 / 3);
+  --headingLineHeightMultiplier: 1.5;
+  --h1FontSize: calc(var(--baseFontSize) * 2.25);
+  --h2FontSize: calc(var(--baseFontSize) * 1.5);
+  --h3FontSize: calc(var(--baseFontSize) * 1.25);
+  --h4FontSize: calc(var(--baseFontSize) * 1);
+}
+
 body {
   color: var(--colorText);
-  font-size: 1rem;
+  font-size: var(--baseFontSize);
   font-weight: 100;
-  line-height: 1.5rem;
+  line-height: var(--baseLineHeight);
   font-family: "Raleway", sans-serif;
 }
 
@@ -45,33 +56,40 @@ body {
 
 :--headings {
   position: relative;
-  margin-top: 0;
+  margin: 0 0 1rem 0;
   color: var(--colorHeading);
   font-weight: 100;
 }
 
 h1 {
-  margin-bottom: 1.8rem;
-  font-size: 2.25rem;
+  /*margin-bottom: calc(var(--h1FontSize) * var(--headingMarginMultiplier));*/
+  font-size: var(--h1FontSize);
+  line-height: calc(var(--h1FontSize) * var(--headingLineHeightMultiplier));
 }
 
 h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  /*margin-bottom: calc(var(--h2FontSize) * var(--headingMarginMultiplier));*/
+  font-size: var(--h2FontSize);
+  line-height: calc(var(--h2FontSize) * var(--headingLineHeightMultiplier));
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: calc(var(--h3FontSize) * var(--headingMarginMultiplier));*/
+  font-size: var(--h3FontSize);
+  line-height: calc(var(--h3FontSize) * var(--headingLineHeightMultiplier));
 }
 
 h4 {
-  margin-bottom: 0.4rem;
-  font-size: 1rem;
+  /*margin-bottom: calc(var(--h4FontSize) * var(--headingMarginMultiplier));*/
+  font-size: var(--h4FontSize);
   font-weight: 600;
+  line-height: calc(var(--h4FontSize) * var(--headingLineHeightMultiplier));
 }
 
-/* minimal styling, prefer removing this and use local styles */
+p {
+  margin: 0 0 var(--baseFontSize) 0;
+}
+
 a {
   color: var(--colorLink);
   text-decoration: none;
@@ -102,7 +120,7 @@ textarea {
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5rem;
-  background: var(--colorLight);
+  background: #f7f7f7;
   outline: none;
   transition: all 0.2s;
 
@@ -111,7 +129,7 @@ textarea {
   }
 
   &:focus {
-    background: color(var(--colorLight) a(40%));
+    background: #fbfbfb;
   }
 
   &:not(:last-child) {
@@ -122,9 +140,8 @@ textarea {
 hr {
   border: 0;
   height: 1px;
-  background: var(--colorNeutral);
-  opacity: 0.2;
-  margin: 2rem 0;
+  background: color(var(--colorLink) a(0.2));
+  margin: calc(var(--baseFontSize) * 2) 0;
 }
 
 address { font-style: normal }
@@ -136,10 +153,10 @@ address { font-style: normal }
  * global styling
  */
 
-:root {
-  --phenomic-HeadingAnchor-width: 1.4rem;
-  --phenomic-HeadingAnchor-margin: 0.4rem;
-}
+ :root {
+   --phenomic-HeadingAnchor-width: 1.4rem;
+   --phenomic-HeadingAnchor-margin: 0.4rem;
+ }
 
 .phenomic-HeadingAnchor {
   display: inline-block;

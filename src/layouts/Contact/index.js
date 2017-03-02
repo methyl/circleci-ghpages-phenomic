@@ -1,6 +1,6 @@
 import React from "react"
 
-import ContactForm from '../../components/ContactForm'
+import ContactForm from "../../components/ContactForm"
 
 import Page from "../Page"
 
@@ -9,7 +9,7 @@ import styles from './index.css'
 
 export const Content = () => (
   <div className={ styles.container }>
-    <div className={ styles.address }>
+    <div className={ styles.left }>
       <h4>Weles Acoustics Sp. z o.o.</h4>
       <address>
         ul. Platanowa 72<br />
@@ -26,7 +26,7 @@ export const Content = () => (
         className={ styles.map }
       />
     </div>
-    <div className={ styles.form }>
+    <div className={ styles.right }>
       <h2>Napisz do nas</h2>
       <ContactForm to={"barfek@gmail.com"} />
     </div>

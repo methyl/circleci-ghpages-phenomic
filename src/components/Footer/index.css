@@ -2,6 +2,12 @@
   background: var(--colorLight);
 }
 
+.contact {
+  width: var(--maxWidth);
+  margin: 0 auto;
+  padding-top: 1.7rem
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -12,7 +18,8 @@
   line-height: 4rem;
 }
 
-.left, .right {
+.copyright {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
 }

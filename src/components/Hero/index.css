@@ -1,33 +1,32 @@
 .container {
-  position: relative;
-  display: block;
-  height: 29rem;
-  margin: 0 -100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  min-height: 29rem;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--colorHeading);
 }
 
 .content {
-  position: absolute;
-  top: 55px;
-  left: 50%;
-  width: calc(var(--maxWidth) / 2);
-  padding-left: 2rem;
-}
-
-.heading {
-  margin: 0;
-  font-size: 3.625rem;
-  font-weight: 100;
-  line-height: 4.125rem;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 39rem;
 }
 
 .body {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   line-height: 1.8rem;
   color: #fff;
+
+  & h1 {
+    font-size: 3.625rem;
+    font-weight: 100;
+    line-height: 4.125rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
 }
 
 .button {
