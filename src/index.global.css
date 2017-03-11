@@ -1,6 +1,13 @@
 /* Using global sytles is not recommended, prefer local styles via CSS Modules */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800|Roboto:300');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800|Roboto:300");
+@import "~react-s-alert/dist/s-alert-default.css";
+@import "~react-s-alert/dist/s-alert-css-effects/slide.css";
+
+.s-alert-box-inner {
+  /* fixes text blur on animation */
+  transform: perspective(1px) translate3d(0, 0, 0);
+}
 
 /*
  * box model like it should be
@@ -120,20 +127,30 @@ textarea {
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5rem;
+  color: var(--colorText);
   background: #f7f7f7;
   outline: none;
   transition: all 0.2s;
 
+  &:not(:last-child) {
+    margin-bottom: 1.4rem;
+  }
+
   &::placeholder {
     color: var(--colorText);
+  }
+
+  &:-webkit-autofill {
+    background-color: black !important;
   }
 
   &:focus {
     background: #fbfbfb;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 1.4rem;
+  &:disabled {
+    color: color(var(--colorText) l(65%));
+    cursor: not-allowed;
   }
 }
 

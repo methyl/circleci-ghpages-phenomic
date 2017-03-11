@@ -1,3 +1,5 @@
+@custom-selector :--enter :hover, :active, :focus;
+
 .button {
   display: inline-block;
   padding: 0 1.5rem 0 2rem;
@@ -9,6 +11,7 @@
   line-height: 2.625rem;
   cursor: pointer;
   transition: .2s all;
+  outline: none;
 
   &:after {
     padding-left: 1rem;
@@ -17,37 +20,35 @@
     opacity: 0.7;
   }
 
-  &:hover, &:active, &:focus {
+  &:--enter {
     text-decoration: none;
   }
-}
 
-.outline {
-  background: transparent !important;
+  &.disabled {
+    cursor: not-allowed;
+  }
 }
 
 .blue {
   background: var(--colorHeading);
 
-  &:hover, &:active, &:focus {
+  &:--enter {
     background: color(var(--colorHeading) l(35%));
   }
 
-  &.outline {
-    color: var(--colorHeading);
-    border-color: var(--colorHeading);
+  &.disabled {
+    background: color(var(--colorHeading) a(40%));
   }
 }
 
 .red {
   background: var(--colorRed);
 
-  &:hover, &:active, &:focus {
+  &:--enter {
     background: color(var(--colorRed) l(50%));
   }
 
-  &.outline {
-    color: var(--colorRed);
-    border-color: var(--colorRed);
+  &.disabled {
+    background: color(var(--colorRed) a(40%));
   }
 }

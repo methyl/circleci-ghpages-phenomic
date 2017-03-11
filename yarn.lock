@@ -3562,6 +3562,10 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+normalize.css@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-5.0.0.tgz#7cec875ce8178a5333c4de80b68ea9c18b9d7c37"
+
 npm-run-all@^1.7.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-1.8.0.tgz#13c315ab7cbeef24adff15a59222e2e535196d36"
@@ -4455,6 +4459,10 @@ progress@^1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
 
+promise-polyfill@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.0.2.tgz#d9c86d3dc4dc2df9016e88946defd69b49b41162"
+
 promise@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
@@ -4625,6 +4633,12 @@ react-router@^2.3.0:
     invariant "^2.2.1"
     loose-envify "^1.2.0"
     warning "^3.0.0"
+
+react-s-alert@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-s-alert/-/react-s-alert-1.2.2.tgz#3a2e8521fdff68622c397a42c49e1885e71b346e"
+  dependencies:
+    babel-runtime "^6.18.0"
 
 react-side-effect@^1.1.0:
   version "1.1.0"
@@ -5899,9 +5913,9 @@ webpack@^1.11.0:
     watchpack "^0.2.1"
     webpack-core "~0.6.9"
 
-whatwg-fetch@>=0.10.0, whatwg-fetch@^0.11.0:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-0.11.1.tgz#6d3ded245fdd97cd728e0e2587b54b733949e663"
+whatwg-fetch@>=0.10.0, whatwg-fetch@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
 
 whet.extend@~0.9.9:
   version "0.9.9"

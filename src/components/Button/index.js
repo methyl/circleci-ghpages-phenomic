@@ -3,7 +3,7 @@ import cx from "classnames"
 
 import styles from "./index.css"
 
-const Button = ({ className, color, outline, ...otherProps }) => (
+const Button = ({ className, color, outline, disabled, ...otherProps }) => (
   <span
     role="button"
     { ...otherProps }
@@ -12,6 +12,7 @@ const Button = ({ className, color, outline, ...otherProps }) => (
       [styles.button]: true,
       [styles.outline]: outline,
       [styles[color]]: color,
+      [styles.disabled]: disabled,
     })
    }
   />
@@ -22,12 +23,14 @@ Button.propTypes = {
   className: PropTypes.string,
   outline: PropTypes.bool,
   color: PropTypes.oneOf(["blue", "red", "green"]),
+  disabled: PropTypes.bool,
 }
 
 Button.defaultProps = {
   className: "",
   outline: false,
   color: "blue",
+  disabled: false,
 }
 
 Button.displayName = "Button"
