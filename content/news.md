@@ -1,6 +1,4 @@
 ---
 title: Aktualności
-layout: Page
+layout: News
 ---
-
-## Aktualności

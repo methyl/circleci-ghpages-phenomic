@@ -1,6 +1,4 @@
 ---
 title: Produkty
-layout: Page
+layout: Products
 ---
-
-## Strona w przygotowaniu
