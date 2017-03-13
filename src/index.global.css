@@ -6,6 +6,7 @@
 
 .s-alert-box-inner {
   /* fixes text blur on animation */
+  font-weight: 200;
   transform: perspective(1px) translate3d(0, 0, 0);
 }
 
@@ -124,6 +125,7 @@ textarea {
   border-width: 0 0 2px 0;
   border-style: solid;
   border-color: var(--colorLink);
+  border-radius: 0;
   font-size: 1rem;
   font-weight: 100;
   line-height: 1.5rem;

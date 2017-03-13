@@ -4,36 +4,17 @@ import { joinUri } from "phenomic"
 
 import styles from "./index.css"
 
-const Page = (
-  {
-    isLoading,
-    __filename,
-    __url,
-    head,
-    header,
-    footer,
-    children,
-  },
-  {
-    metadata: { pkg },
-  }
-) => {
+const Page = ({ __url, head, children }, { metadata: { pkg } }) => {
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
-  const socialImage = "";
   const meta = [
-    { property: "og:type", content: "article" },
-    { property: "og:title", content: metaTitle },
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: `${metaTitle} ~ ${pkg.company}`},
     {
       property: "og:url",
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
-    { property: "og:image", content: socialImage },
+    { property: "og:image", content: `${pkg.homepage}/assets/og-image.jpg` },
     { property: "og:description", content: head.description },
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:title", content: metaTitle },
-    { name: "twitter:creator", content: `@${ pkg.twitter }` },
-    { name: "twitter:description", content: head.description },
-    { name: "twitter:image", content: socialImage },
     { name: "description", content: head.description },
   ]
 

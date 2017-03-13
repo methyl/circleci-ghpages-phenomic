@@ -1,19 +1,13 @@
 import React, { PropTypes } from "react"
-import Promise from 'promise-polyfill';
-import 'whatwg-fetch';
-
 import Alert from 'react-s-alert';
-import Button from '../Button'
+
+import Button from '../../Button'
 
 import styles from './index.css'
 
-class ContactForm extends React.Component {
+class Form extends React.Component {
   constructor(props) {
     super(props);
-
-    if (!window.Promise) {
-      window.Promise = Promise;
-    }
 
     this.state = { disabled: false }
   }
@@ -46,6 +40,7 @@ class ContactForm extends React.Component {
 
     const data = new FormData();
 
+    data.append("_gotcha", inputs["_gotcha"].value);
     data.append("name", inputs["name"].value);
     data.append("subject", inputs["subject"].value);
     data.append("email", inputs["email"].value);
@@ -89,6 +84,7 @@ class ContactForm extends React.Component {
         ref={ (c) => { this.form = c } }
       >
         <div className={ styles.left }>
+          <input type="text" name="_gotcha" style={ { display: "none" } } />
           <label htmlFor="email">
             Adres e-mail
           </label>
@@ -146,8 +142,8 @@ class ContactForm extends React.Component {
   }
 }
 
-ContactForm.propTypes = {
+Form.propTypes = {
   to: PropTypes.string.isRequired,
 }
 
-export default ContactForm
+export default Form

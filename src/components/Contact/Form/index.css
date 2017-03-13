@@ -1,9 +1,10 @@
 .form {
-  width: 100%
+  width: 100%;
 }
 
 .left, .right {
-  float: left
+  float: left;
+  box-sizing: border-box;
 }
 
 .left {
@@ -28,4 +29,5 @@
   border: none;
   background: none;
   appearance: none;
+  outline: none;
 }

@@ -1,5 +1,5 @@
 ---
-title: Weles Acoustics Sp. z o.o.
+title: Kontrolujemy dźwięk
 layout: Homepage
 ---
 

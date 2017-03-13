@@ -1,20 +1,20 @@
 import React from "react"
 
-import ContactForm from "../../components/ContactForm"
+import Section from "../Section"
 
-import Page from "../Page"
+import Form from "./Form"
 
-import mapImage from "./assets/contact-map.png"
+import locationImage from "./assets/location.png"
 import styles from './index.css'
 
-export const Content = () => (
-  <div className={ styles.container }>
+export const Contact = () => (
+  <Section heading="Kontakt" className={ styles.section }>
     <div className={ styles.left }>
       <h4>Weles Acoustics Sp. z o.o.</h4>
       <address>
         ul. Platanowa 72<br />
         44-217 Rybnik<br />
-        e-mail: <a href="mailto:mk@weles-acoustics.com">mk@weles-acoustics.com</a><br />
+        e-mail: <a href="mailto:info@weles-acoustics.com">info@weles-acoustics.com</a><br />
         tel. <a href="tel:+48882832192">+48 882 832 192</a>
       </address>
       <a
@@ -22,23 +22,15 @@ export const Content = () => (
         href="https://www.openstreetmap.org/way/454552474"
         target="_blank"
         rel="nofollow noreferrer"
-        style={{ backgroundImage: `url(${mapImage})`}}
+        style={{ backgroundImage: `url(${locationImage})`}}
         className={ styles.map }
       />
     </div>
     <div className={ styles.right }>
       <h2>Napisz do nas</h2>
-      <ContactForm to={"barfek@gmail.com"} />
+      <Form to={"info@weles-acoustics.com"} />
     </div>
-  </div>
-)
-
-const Contact = (props) => (
-  <Page { ...props }>
-    <div className={ styles.content }>
-      <Content />
-    </div>
-  </Page>
+  </Section>
 )
 
 export default Contact

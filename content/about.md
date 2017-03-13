@@ -7,7 +7,7 @@ layout: About
 
 Naszym celem jest odnalezienie, wspólnie z tobą, najlepszego rozwiązania dla twoich pomiarów. Nasi konsultanci zawsze chętnie doradzą przy wyborze konkretnego produktu oraz zorganizują jego demonstrację.
 
-Zakres naszych usług obejmuje sprzedaż oraz doradztwo przy doborze zestawów mikrofonowych (przedwzmacniacz oraz kapsuła mikrofonowa), akcelerometrów, mierników poziomu dźwięku, źródeł dźwięku, jak również kompletnych systemów pomiarowych dla zastosowań w akustyce środowiskowej oraz budowlanej. Ponadto, w naszej ofercie znajdują się również symulatory głowy, uszu oraz ust. Gamę produktów zamyka szeroki asortyment 123 tub impedancyjnych, przeznaczonych do pomiaru współczynnika pochłaniania dźwięku.
+Zakres naszych usług obejmuje sprzedaż oraz doradztwo przy doborze zestawów mikrofonowych (przedwzmacniacz oraz kapsuła mikrofonowa), akcelerometrów, mierników poziomu dźwięku, źródeł dźwięku, jak również kompletnych systemów pomiarowych dla zastosowań w akustyce środowiskowej oraz budowlanej. Ponadto, w naszej ofercie znajdują się również symulatory głowy, uszu oraz ust. Gamę produktów zamyka szeroki asortyment tub impedancyjnych, przeznaczonych do pomiaru współczynnika pochłaniania dźwięku.
 
 <!-- – Pełna oferta Weles Acoustics dostępna [tutaj](/products). -->
 

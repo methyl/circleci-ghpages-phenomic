@@ -1,3 +1,7 @@
+.section {
+  background: var(--colorLight);
+}
+
 .content {
   padding-top: 2rem;
 }

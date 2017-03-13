@@ -236,6 +236,11 @@ export default (config = {}) => {
       }),
       */
 
+      new webpack.ProvidePlugin({
+        Promise: 'imports?this=>global!exports?global.Promise!es6-promise',
+        fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch',
+      }),
+
       new PhenomicLoaderFeedWebpackPlugin({
         // here you define generic metadata for your feed
         feedsOptions: {
