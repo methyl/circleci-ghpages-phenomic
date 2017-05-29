@@ -6,4 +6,6 @@
 .wrapper {
   display: flex;
   margin: 6rem auto 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
