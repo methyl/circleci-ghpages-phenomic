@@ -1,0 +1,63 @@
+.intro {
+  & p:first-child {
+    float: left;
+    width: 25%;
+    margin: 0 2rem 0 0;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--colorLight);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}
+
+.content {
+  clear: both
+}
+
+.subcategory {
+  & ~ & {
+    margin-top: 2rem;
+  }
+
+  & h3 {
+    border-bottom: 1px solid var(--colorNeutral);
+  }
+}
+
+.product, .description {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.product {
+  width: 27%
+}
+
+.description {
+  width: 73%
+}
+
+.list {
+  & .description {
+    color: var(--colorText);
+  }
+}
+
+.item {
+  display: flex;
+  border-top: 1px solid var(--colorNeutral);
+  background: var(--colorLight);
+
+  &:hover {
+    text-decoration: none;
+    background: color(var(--colorLight) lightness(92%));
+  }
+
+  & ~ & {
+    /*margin-top: 0.5rem;*/
+  }
+}

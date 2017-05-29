@@ -59,13 +59,8 @@ class Form extends React.Component {
   validate = (inputs) => {
     let isValid = true;
 
-    if (!inputs["message"].value) {
-      Alert.error("Uzupełnij treść wiadomości.");
-      isValid = false;
-    }
-
-    if (!inputs["email"].value) {
-      Alert.error("Uzupełnij adres e-mail.");
+    if (!inputs["message"].value || !inputs["email"].value) {
+      Alert.error("Uzupełnij wymagane pola.");
       isValid = false;
     }
 

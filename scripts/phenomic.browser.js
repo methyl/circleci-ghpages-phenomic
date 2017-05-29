@@ -1,3 +1,5 @@
+require.context("../content", true, /\.(html|ico|jpe?g|png|gif|pdf)$/)
+
 // Hot loading HRM Patch
 import "react-hot-loader/patch"
 // fetch polyfill

@@ -1,0 +1,33 @@
+.container {
+
+}
+
+.list {
+  list-style: none
+}
+
+.item {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7rem 2rem;
+  border: 1px solid var(--colorLight);
+  border-radius: 4px;
+  color: var(--colorPrimary);
+
+  &, &:hover {
+    text-decoration: none;
+  }
+
+  &:hover:not(.itemActive) {
+    border-color: color(var(--colorPrimary) a(50%));
+  }
+
+  & ~ & {
+    margin-top: 0.5rem
+  }
+}
+
+.itemActive {
+  border-color: var(--colorPrimary);
+}

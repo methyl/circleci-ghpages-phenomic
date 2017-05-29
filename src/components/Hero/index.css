@@ -1,6 +1,7 @@
 .container {
   flex: 1;
   min-height: 29rem;
+  min-width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--colorHeading);

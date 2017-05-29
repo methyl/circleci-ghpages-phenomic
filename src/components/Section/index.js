@@ -12,14 +12,14 @@ const Section = ({ heading, children, className, ...otherProps }) => (
     { ...otherProps }
   >
     <div className={ styles.content }>
-      {heading &&
-        <div className={ styles.heading }>
-          <h1>{heading}</h1>
-        </div>
-      }
-      <div className={ styles.body }>
-        {children}
+    {heading &&
+      <div className={ styles.heading }>
+        <h1>{heading}</h1>
       </div>
+    }
+    <div className={ styles.body }>
+      {children}
+    </div>
     </div>
   </section>
 )

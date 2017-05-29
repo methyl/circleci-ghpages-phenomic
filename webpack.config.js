@@ -180,7 +180,7 @@ export default (config = {}) => {
                 loader: "postcss-loader",
                 query: { "plugins": postcssPlugins },
               },
-            ]
+          ]
           }),
         },
         */
@@ -203,6 +203,14 @@ export default (config = {}) => {
             name: "[path][name].[hash].[ext]",
             context: path.join(__dirname, config.source),
           },
+        },
+        {
+          test: /content(\/|\\).*\.(html|ico|jpe?g|png|gif|pdf)$/,
+          loader: "file-loader",
+          query: {
+            name: "[path][name].[ext]",
+            context: path.join(__dirname, config.source),
+          }
         },
 
         // svg as raw string to be inlined

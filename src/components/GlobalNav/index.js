@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "phenomic";
+import { Link } from "phenomic";
 
 import styles from "./index.css"
 

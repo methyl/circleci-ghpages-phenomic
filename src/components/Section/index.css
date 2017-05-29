@@ -2,8 +2,7 @@
   display: flex;
   flex: 0;
   justify-content: center;
-  box-sizing: content-box;
-  min-width: 100vw;
+  box-sizing: border-box;
   padding: 2.5rem 0;
 
   & ~ & {

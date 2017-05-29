@@ -16,22 +16,20 @@ const AppContainer = (props) => (
   <Container>
     <DefaultHeadMeta />
     <Header />
-    <Alert
-      position="top-right"
-      effect="slide"
-      offset={ 120 }
-      stack
-    />
+    <Alert position="bottom" />
     <Content>
       { props.children }
     </Content>
-    <Contact />
+    {!props.location.pathname.match("products") && <Contact />}
     <Footer />
   </Container>
 )
 
 AppContainer.propTypes = {
   children: PropTypes.node,
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 }
 
 export default AppContainer
