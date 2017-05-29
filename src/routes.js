@@ -30,26 +30,26 @@ const PageContainer = (props) => (
   />
 )
 
-const redirectToCategory = ({
-  location: {
-    action,
-    pathname,
-  },
-  params: {
-    category,
-    subcategory
-  }
-}, replaceState) => {
-  if (action === "PUSH") {
-    replaceState({
-      pathname: pathname,
-    })
-  } else {
-    replaceState({
-      pathname: `/products/${category}/`, // add #${subcategory} hash support
-    });
-  }
-};
+// const redirectToCategory = ({
+//   location: {
+//     action,
+//     pathname,
+//   },
+//   params: {
+//     category,
+//     subcategory
+//   }
+// }, replaceState) => {
+//   if (action === "PUSH") {
+//     replaceState({
+//       pathname: pathname,
+//     })
+//   } else {
+//     replaceState({
+//       pathname: `/products/${category}/`, // add #${subcategory} hash support
+//     });
+//   }
+// };
 
 export default (
   <Route component={ AppContainer }>
